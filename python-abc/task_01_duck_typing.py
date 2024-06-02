@@ -1,4 +1,3 @@
-
 #!/usr/bin/pyhhon3
 '''
 This module create an abstract class
