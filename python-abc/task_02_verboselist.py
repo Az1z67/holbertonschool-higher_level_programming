@@ -2,10 +2,6 @@
 '''
 This mudule create a class named VerboseList
 that extends the Python list class. 
-This custom class should print a notification
-message every time an item is added 
-(using the append or extend methods) 
-or removed (using the remove or pop methods).
 '''
 
 
