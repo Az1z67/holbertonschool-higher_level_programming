@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Real definition of a rectangle."""
 
@@ -86,4 +85,3 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-
