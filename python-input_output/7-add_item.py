@@ -16,4 +16,4 @@ try:
 except FileNotFoundError:
     my_list = []
 my_list.extend(args[1:])
-save_to_json_file(my_list, file)    
+save_to_json_file(my_list, file)
