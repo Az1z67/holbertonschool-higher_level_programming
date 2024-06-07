@@ -2,7 +2,6 @@
 "File reading"
 
 
-
 def read_file(filename=""):
     "Prototype function for reading"
 
