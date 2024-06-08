@@ -12,7 +12,7 @@ class Student:
 
     def to_json(self):
         """defines a student"""
-        if attr is None:
+        if attrs is None:
             return vars(self)
         else:
             return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
