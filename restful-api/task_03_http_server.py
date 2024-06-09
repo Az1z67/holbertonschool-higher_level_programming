@@ -25,7 +25,7 @@ class SimpleAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b'Endpoint not found')  # Change this line
+            self.wfile.write(b'404 Endpoint not found')  # Change this line
 
 if __name__ == "__main__":
     server_address = ('', 8000)
