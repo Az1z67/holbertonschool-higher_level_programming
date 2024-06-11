@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch (adjust as needed)
+      - main
 
 jobs:
   build:
@@ -26,6 +26,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./devops_essentials/github_actions  # Path to your Dockerfile
+          context: ./devops_essentials/github_actions
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/your-image-name:latest
