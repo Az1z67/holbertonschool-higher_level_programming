@@ -4,9 +4,6 @@ RUN apk add --no-cache curl
 
 RUN mkdir -p /app
 
-COPY config.txt
+COPY config.txt /app/config.txt
 
-WORKDIR /app
-
-CMD ["echo", "Container is set up"]
-
+CMD ["echo", "Setup Complete"]
