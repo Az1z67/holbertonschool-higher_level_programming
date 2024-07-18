@@ -44,6 +44,7 @@ def items():
     return render_template('items.html', items=items)
 
 @app.route('/products')
+@app.route('/products')
 def products():
     source = request.args.get("source", None)
     product_id = request.args.get("id", None)
@@ -59,7 +60,9 @@ def products():
 
     if product_id:
         products = [p for p in products if p['id'] == int(product_id)]
-    
+        if not products:
+            return render_template('product_display.html', error="Product not found")
+
     return render_template('product_display.html', products=products)
 
 if __name__ == "__main__":
